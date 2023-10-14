@@ -1,7 +1,7 @@
 import Books from "./books";
 
 function Read() {
-    // Initialize array
+    // Initialize JSON array
     const data = [
         {
             "title": "Learn Git in a Month of Lunches",

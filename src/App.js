@@ -1,3 +1,4 @@
+//Imports
 import './App.css';
 import Content from './componenets/content';
 import Footer from './componenets/footer';
@@ -13,6 +14,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
+    //Display Navbar
     <BrowserRouter>
       <div className="App">
         <Navbar bg="primary" data-bs-theme="dark">
@@ -26,6 +28,7 @@ function App() {
             </Nav>
           </Container>
         </Navbar>
+        {/*Routing*/}
         <Routes>
           <Route path='/' element={<Content></Content>}></Route>
           <Route path='/read' element={<Header></Header>}></Route>
