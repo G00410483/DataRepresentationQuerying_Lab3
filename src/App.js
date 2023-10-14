@@ -19,9 +19,13 @@ function App() {
       <div className="App">
         <Navbar bg="primary" data-bs-theme="dark">
           <Container>
+          {/* Navbar */}
             <Nav className="me-auto">
+              {/* Link to Homepage */}
               <Nav.Link href="/">Home</Nav.Link>
+              {/* Link to Read Page */}
               <Nav.Link href="/read">Read</Nav.Link>
+              {/* Link to Create Page */}
               <Nav.Link href="/create">Create</Nav.Link>
               <Nav.Link href="/read1">READ</Nav.Link>
               <Nav.Link href="/create1">CREATE</Nav.Link>
@@ -30,10 +34,15 @@ function App() {
         </Navbar>
         {/*Routing*/}
         <Routes>
+          {/* Route to Homepage */}
           <Route path='/' element={<Content></Content>}></Route>
+           {/* Route to Header Page */}
           <Route path='/read' element={<Header></Header>}></Route>
+           {/* Route to Footer Page */}
           <Route path='/create' element={<Footer></Footer>}></Route>
+           {/* Route to Read Page */}
           <Route path='/read1' element={<Read></Read>}></Route>
+           {/* Route to Create Page */}
           <Route path='/create1' element={<Create></Create>}></Route>
         </Routes>
       </div>
